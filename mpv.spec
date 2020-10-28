@@ -4,7 +4,7 @@
 #
 Name     : mpv
 Version  : 0.29.0.343.379950ce0
-Release  : 19
+Release  : 20
 URL      : https://github.com/mpv-player/mpv/archive/v0.29.0-343-gc379950ce0.tar.gz
 Source0  : https://github.com/mpv-player/mpv/archive/v0.29.0-343-gc379950ce0.tar.gz
 Summary  : mpv media player client library
@@ -114,17 +114,17 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583045008
+export SOURCE_DATE_EPOCH=1603856173
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
-export FCFLAGS="$CFLAGS -fno-lto "
-export FFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$FFLAGS -fno-lto "
+export FFLAGS="$FFLAGS -fno-lto "
 export CXXFLAGS="$CXXFLAGS -fno-lto "
 make  %{?_smp_mflags}
 
 
 %install
-export SOURCE_DATE_EPOCH=1583045008
+export SOURCE_DATE_EPOCH=1603856173
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/mpv
 cp %{_builddir}/mpv-c379950ce08932dec839f18926183c7b05b57d00/Copyright %{buildroot}/usr/share/package-licenses/mpv/1afab820fd1a26aee428addf611348ba45ccb8e5
