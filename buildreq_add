@@ -1,9 +1,9 @@
 # This file contains additional build requirements that did not get
 # picked up automatically. One name per line, no whitespace.
-zlib-dev
+Vulkan-Headers-dev
+Vulkan-Loader-dev
+libX11-dev
 libva-dev
 mesa-dev
 not-ffmpeg-dev
-libX11-dev
-Vulkan-Loader-dev
-Vulkan-Headers-dev
+zlib-dev

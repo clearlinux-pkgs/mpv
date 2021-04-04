@@ -1,2 +1,5 @@
 0001-waf-add-waf-as-a-patch-for-ClearLinux.patch
 0002-Makefile-quick-wrapper-for-waf.patch
+0003-vo_gpu-placebo-update-for-upstream-API-changes.patch
+0004-vo_gpu-libplacebo-require-v2.72.0.patch
+0005-vo_gpu-placebo-keep-track-of-texture-sample-mode.patch

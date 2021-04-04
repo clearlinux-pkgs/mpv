@@ -1,19 +1,19 @@
 # This file contains additional pkgconfig build requirements that did
 # not get picked up automatically. One name per line, no whitespace.
-wayland-protocols
+alsa
+libass
 libplacebo
+libpulse
 libva
 libva-drm
 libva-x11
+luajit
+wayland-client
+wayland-cursor
+wayland-protocols
 x11
+xext
 xinerama
+xkbcommon
 xrandr
 xscrnsaver
-xext
-wayland-client
-xkbcommon
-wayland-cursor
-libass
-alsa
-libpulse
-luajit
