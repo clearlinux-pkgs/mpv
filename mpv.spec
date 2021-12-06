@@ -4,7 +4,7 @@
 #
 Name     : mpv
 Version  : 0.34.0
-Release  : 23
+Release  : 24
 URL      : https://github.com/mpv-player/mpv/archive/v0.34.0/mpv-0.34.0.tar.gz
 Source0  : https://github.com/mpv-player/mpv/archive/v0.34.0/mpv-0.34.0.tar.gz
 Summary  : mpv media player client library
