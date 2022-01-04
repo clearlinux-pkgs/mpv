@@ -9,16 +9,13 @@ libavfilter.so.7
 libavformat.so.58
 libavutil.so.56
 libc.so.6
-libdl.so.2
 libdrm.so.2
 libgbm.so.1
 liblcms2.so.2
 libluajit-5.1.so.2
 libm.so.6
-libplacebo.so.120
-libpthread.so.0
+libplacebo.so.157
 libpulse.so.0
-librt.so.1
 libswresample.so.3
 libswscale.so.5
 libva-drm.so.2
