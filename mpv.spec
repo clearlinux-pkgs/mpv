@@ -4,7 +4,7 @@
 #
 Name     : mpv
 Version  : 0.34.1
-Release  : 28
+Release  : 29
 URL      : https://github.com/mpv-player/mpv/archive/v0.34.1/mpv-0.34.1.tar.gz
 Source0  : https://github.com/mpv-player/mpv/archive/v0.34.1/mpv-0.34.1.tar.gz
 Summary  : mpv media player client library
@@ -128,7 +128,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641315734
+export SOURCE_DATE_EPOCH=1656433629
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -146,7 +146,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1641315734
+export SOURCE_DATE_EPOCH=1656433629
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/mpv
 cp %{_builddir}/mpv-0.34.1/LICENSE.GPL %{buildroot}/usr/share/package-licenses/mpv/4cc77b90af91e615a64ae04893fdffa7939db84c
@@ -157,7 +157,7 @@ popd
 %make_install
 ## Remove excluded files
 rm -f %{buildroot}*/usr/etc/mpv/encoding-profiles.conf
-/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot}/usr/share/clear/optimized-elf/ %{buildroot}/usr/share/clear/filemap/filemap-%{name}
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)
@@ -186,6 +186,7 @@ rm -f %{buildroot}*/usr/etc/mpv/encoding-profiles.conf
 /usr/include/mpv/render.h
 /usr/include/mpv/render_gl.h
 /usr/include/mpv/stream_cb.h
+/usr/lib64/glibc-hwcaps/x86-64-v3/libmpv.so
 /usr/lib64/libmpv.so
 /usr/lib64/pkgconfig/mpv.pc
 
@@ -199,9 +200,10 @@ rm -f %{buildroot}*/usr/etc/mpv/encoding-profiles.conf
 
 %files lib
 %defattr(-,root,root,-)
+/usr/lib64/glibc-hwcaps/x86-64-v3/libmpv.so.1
+/usr/lib64/glibc-hwcaps/x86-64-v3/libmpv.so.1.109.0
 /usr/lib64/libmpv.so.1
 /usr/lib64/libmpv.so.1.109.0
-/usr/share/clear/optimized-elf/lib*
 
 %files license
 %defattr(0644,root,root,0755)

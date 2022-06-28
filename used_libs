@@ -11,10 +11,11 @@ libavutil.so.56
 libc.so.6
 libdrm.so.2
 libgbm.so.1
+libgcc_s.so.1
 liblcms2.so.2
 libluajit-5.1.so.2
 libm.so.6
-libplacebo.so.157
+libplacebo.so.192
 libpulse.so.0
 libswresample.so.3
 libswscale.so.5
