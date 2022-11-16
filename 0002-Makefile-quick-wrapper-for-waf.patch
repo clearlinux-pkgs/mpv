@@ -18,7 +18,7 @@ index 0000000..0d1ff7f
 +.DEFAULT_GOAL: premake
 +
 +premake:
-+		$(PYTHON) ./waf configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib64  --mandir=/usr/share/man --disable-static --enable-libmpv-shared --enable-x11 --enable-libplacebo
++		$(PYTHON) ./waf configure --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib64  --mandir=/usr/share/man --disable-static --enable-libmpv-shared --enable-libplacebo
 +install:
 +		$(PYTHON) ./waf install $*
 +clean:

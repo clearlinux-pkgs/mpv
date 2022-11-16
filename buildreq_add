@@ -7,3 +7,4 @@ libva-dev
 mesa-dev
 not-ffmpeg-dev
 zlib-dev
+buildreq-gnome
