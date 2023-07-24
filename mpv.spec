@@ -4,10 +4,10 @@
 # Using build pattern: make
 #
 Name     : mpv
-Version  : 0.35.1
-Release  : 48
-URL      : https://github.com/mpv-player/mpv/archive/v0.35.1/mpv-0.35.1.tar.gz
-Source0  : https://github.com/mpv-player/mpv/archive/v0.35.1/mpv-0.35.1.tar.gz
+Version  : 0.36.0
+Release  : 49
+URL      : https://github.com/mpv-player/mpv/archive/v0.36.0/mpv-0.36.0.tar.gz
+Source0  : https://github.com/mpv-player/mpv/archive/v0.36.0/mpv-0.36.0.tar.gz
 Summary  : mpv media player client library
 Group    : Development/Tools
 License  : GPL-2.0 LGPL-2.1
@@ -109,12 +109,12 @@ license components for the mpv package.
 
 
 %prep
-%setup -q -n mpv-0.35.1
-cd %{_builddir}/mpv-0.35.1
-%patch1 -p1
-%patch2 -p1
+%setup -q -n mpv-0.36.0
+cd %{_builddir}/mpv-0.36.0
+%patch -P 1 -p1
+%patch -P 2 -p1
 pushd ..
-cp -a mpv-0.35.1 buildavx2
+cp -a mpv-0.36.0 buildavx2
 popd
 
 %build
@@ -122,7 +122,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685592447
+export SOURCE_DATE_EPOCH=1690208869
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -140,7 +140,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1685592447
+export SOURCE_DATE_EPOCH=1690208869
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/mpv
 cp %{_builddir}/mpv-%{version}/LICENSE.GPL %{buildroot}/usr/share/package-licenses/mpv/4cc77b90af91e615a64ae04893fdffa7939db84c || :
@@ -189,9 +189,9 @@ rm -f %{buildroot}*/usr/etc/mpv/encoding-profiles.conf
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libmpv.so.2.0.0
+/V3/usr/lib64/libmpv.so.2.1.0
 /usr/lib64/libmpv.so.2
-/usr/lib64/libmpv.so.2.0.0
+/usr/lib64/libmpv.so.2.1.0
 
 %files license
 %defattr(0644,root,root,0755)
