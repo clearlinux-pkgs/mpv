@@ -7,7 +7,7 @@
 #
 Name     : mpv
 Version  : 0.38.0
-Release  : 100
+Release  : 101
 URL      : https://github.com/mpv-player/mpv/archive/v0.38.0/mpv-0.38.0.tar.gz
 Source0  : https://github.com/mpv-player/mpv/archive/v0.38.0/mpv-0.38.0.tar.gz
 Summary  : No detailed summary available
