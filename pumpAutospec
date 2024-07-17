@@ -1,3 +1,4 @@
 Cannot resolve dependency name: pkgconfig(caca)
 Cannot resolve dependency name: pkgconfig(libbluray)
 Cannot resolve dependency name: pkgconfig(libsixel)
+Cannot resolve dependency name: pkgconfig(lua-5.2)
