@@ -1,0 +1,4 @@
+/etc/:
+/etc/mpv:
+encoding-profiles.conf
+mpv

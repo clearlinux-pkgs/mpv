@@ -1,2 +1,12 @@
 # This file contains pkgconfig build requirements that get picked up
 # but are undesirable. One entry per line, no whitespace.
+caca
+libbluray
+libsixel
+lua-5.2
+lua5.2
+lua52
+mujs
+rubberband
+vapoursynth
+vapoursynth-script
