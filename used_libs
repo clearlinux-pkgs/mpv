@@ -6,11 +6,11 @@ libXv.so.1
 libarchive.so.13
 libasound.so.2
 libass.so.9
-libavcodec.so.60
-libavdevice.so.60
-libavfilter.so.9
-libavformat.so.60
-libavutil.so.58
+libavcodec.so.61
+libavdevice.so.61
+libavfilter.so.10
+libavformat.so.61
+libavutil.so.59
 libc.so.6
 libdrm.so.2
 libgbm.so.1
@@ -24,8 +24,8 @@ libpipewire-0.3.so.0
 libplacebo.so.349
 libpulse.so.0
 libsndio.so.7
-libswresample.so.4
-libswscale.so.7
+libswresample.so.5
+libswscale.so.8
 libuchardet.so.0
 libva-drm.so.2
 libva-wayland.so.2
