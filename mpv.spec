@@ -7,7 +7,7 @@
 #
 Name     : mpv
 Version  : 0.39.0
-Release  : 128
+Release  : 129
 URL      : https://github.com/mpv-player/mpv/archive/v0.39.0/mpv-0.39.0.tar.gz
 Source0  : https://github.com/mpv-player/mpv/archive/v0.39.0/mpv-0.39.0.tar.gz
 Summary  : No detailed summary available
